@@ -1,0 +1,20 @@
+In the abstract they tell us that they use a satellite to map star positions instead of the normal photometric survey. Doing this they found that the stream gd-1 is 20° longer than what was first thought.
+Introduction just tells us about stellar streams and what is already known about gd-1. The goal is to use gaia to get a cleaner map of gd-1 than photometry alone.
+The data is difficult to interpret because I'm only in calc. ϖ tiny shift in stars position relative to how earth orbits the sun. less ϖ means the stars are farther away.
+φ1, φ2 (x,y) they use this instead of (RA/Dec) because if they use it, it will appear to look like a parabola but if they use these special space coord it will be straight with some wiggles.
+PM is how fast a star appears to move across the sky per year. It's a mix of the star's real motion through space and an apparent shift caused by the Sun's own motion
+They subtract the sun's contribution to the apparent motion using an assumed distance of how far the star is. The Sun's velo is already known and what's left is the star's true motion relative to the galaxy.
+CMD stars color and brightness to find its age and see if it matches gd-1. usually 12 billion years metal poor isochrone(The isochrone line is theoretical to help determine what belongs. to help take some stars out by comparing temperature and brightness) so they kept stars that matched the known stats and age of gd-1 i assume. Isochrone ~ same time. 
+They combine each of these stats to get a rough estimate revealing the stream is 20 degrees longer than known with the photometry strategy. They named the 2 new sections the spur and the blob.
+§3.1 
+Fourth order polynomial fit. It's a curvy line and it gives us the median y position as the x increases. 
+take the median of each and that is the rough estimate of the size x degrees wise. I understand but boy is that hard to explain. Because x and y are degrees. so you have major~x and minor~y. You take major , cut it up then use minor to find the median. then you get a bunch of different lines. that don't combine but they are together in sort of way 
+Background subtraction is an estimate of how many stars just from contamination by looking at regions that aren't in the stream but appear in it because they are close. at a lower or higher y value. 
+Real gaps and excess and density were found (likely where the core or the progenitor lied) Then they used gaia data to quality check the artifacts they found strange. Artifacts ~ supposed glitches
+They made toy models to simulate the stream. They simulated the core releasing stars from the cluster then letting gravity pull them into the trailing stream. 2 scenarios then compared it to real data.
+
+§3.2 
+prove that the new sections spur and blob aren't background stars. Sum of the stars of the component each weighted by a. background stars were spread out evenly. The main stream modeled two bell curves. The data is a blend of some known shapes. Pick the best fitted recipe that matches the observation. priors ~ before the fitting 
+MCMC doesn't give you just 1 best-fitting answer. Instead, it generates thousands of complete guesses, where each guess already contains a value for all 7 parameters at once. With these 7 parameters it spits out thousands of values that are a possibility. It favors guesses that fit the well and values that drift apart tend to fit poorly. Instead of having all 7 they pick the one that matters most to the project and see how spread out its values are. You end up with a range of possible values.
+The fitted model likes an extra feature component of the spur. (real) and for the blob slightly less. (still real probably) While the control group had no such features. that proves that the blob and spur are not random but actual groups tied to the gd-1 star stream.
+The parent cluster location has never had any candidate with photometry but with gaia we have a very rough estimate. The star stream is more dispersed and has gaps which suggests it had contact with subhalo.
