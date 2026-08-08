@@ -1,0 +1,8 @@
+astropy>=8.0
+matplotlib>=3.11
+pandas>=3.0
+numpy>=2.5
+scipy>=1.18
+requests>=2.34
+pyvo>=1.9
+pyarrow>=25.0
