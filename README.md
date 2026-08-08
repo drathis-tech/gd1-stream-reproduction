@@ -59,10 +59,16 @@ Run in this order (each step reads the previous step's parquet output from
 
 ## Result
 
-The final sample (`data/gd1_final_v2.parquet`, 688 stars) shows a stream
-detection at phi2=0 significant at p ≈ 1.2e-73 against the local background
-(see `plots/gd1_phi2_histogram_v2.png`), visible directly as a narrow band
-in `plots/gd1_stream_v2.png` and `plots/before_after_comparison.png`.
+The final sample (`data/gd1_final_v2.parquet`, 688 stars) shows a clear
+excess at phi2=0 relative to the surrounding background -- 406 of 688
+candidates fall within |phi2|<1°, versus ~141 expected if the central bins
+had the same density as the flanking region (phi2 ∈ [-3°,-1°) ∪ (1°,3°]). A
+simple Poisson comparison against that background gives p ≈ 1.2e-73, though
+this should be read as a local significance check rather than a rigorous
+global detection significance: the ±1° window was chosen after earlier
+plots already showed the excess there, so no look-elsewhere correction has
+been applied. The excess is visible directly as a narrow band in
+`plots/gd1_stream_v2.png` and `plots/before_after_comparison.png`.
 
 ## Regenerating the data
 
